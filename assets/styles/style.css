@@ -1,0 +1,101 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  font-family: "Open Sans", sans-serif;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.form-input {
+  display: flex;
+  flex-direction: column;
+  margin: 12px;
+}
+
+/* BEM - Block - Element - Modifier */
+
+.form-input--narrow {
+  width: 40%;
+}
+
+.form-input__button {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  border: none;
+  padding: 8px;
+  font-size: x-large;
+  color: white;
+  background-color: #057bfe;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-input__button--small {
+  width: 20px;
+  height: 20px;
+  font-size: initial;
+}
+
+.form-input__button--red {
+  background-color: #dd3444;
+}
+
+.current-balance-container {
+  height: 130px;
+  border: 1px solid darkgray;
+  border-radius: 8px;
+  padding: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.current-balance-container span {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.transaction-list {
+  list-style: none;
+  padding: 0;
+}
+
+.transaction-list li {
+  padding: 10px;
+  border: 1px solid darkgray;
+  border-radius: 8px;
+  margin-bottom: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.transaction-list li > div {
+  display: flex;
+  align-items: center;
+}
+
+.transaction-list span:first-child {
+  margin-right: 12px;
+}
+
+.transaction-list span:last-of-type {
+  font-size: small;
+  margin-right: 12px;
+}
+
+.transaction-list__item--red {
+  color: #dd3444;
+}
+
+.transaction-list__item--green {
+  color: #27a844;
+}

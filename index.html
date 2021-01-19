@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="./assets/styles/style.css" />
+    <title>Finance App</title>
+  </head>
+  <body>
+    <main class="container">
+      <section id="form-section">
+        <h2>New transaction</h2>
+
+        <div class="form-input form-input--narrow">
+          <label for="form-input-amount">Amount</label>
+          <input type="number" id="form-input-amount" min="0" />
+        </div>
+
+        <div class="form-input">
+          <label for="form-input-description">Description</label>
+          <input
+            placeholder="Describe your transaction"
+            type="text"
+            id="form-input-description"
+          />
+        </div>
+
+        <div class="form-input">
+          <label for="form-input-transaction-type">Type of transaction</label>
+          <select id="form-input-transaction-type">
+            <option value="income">Income</option>
+            <option value="expense">Expense</option>
+          </select>
+        </div>
+
+        <div class="form-input">
+          <button
+            id="form-input-button"
+            class="form-input__button"
+            type="button"
+          >
+            +
+          </button>
+        </div>
+      </section>
+      <section id="list-section">
+        <h2>All transactions</h2>
+
+        <ul id="transaction-list" class="transaction-list"></ul>
+      </section>
+      <section id="current-amount-section">
+        <h2>Current Balance</h2>
+
+        <div class="current-balance-container">
+          <span>$<span id="current-balance">0.00</span></span>
+        </div>
+      </section>
+    </main>
+
+    <script type="text/javascript" src="./assets/javascript/index.js"></script>
+  </body>
+</html>
